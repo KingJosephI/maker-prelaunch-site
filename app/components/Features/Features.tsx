@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import Image from "next/image";
 
@@ -40,7 +40,7 @@ const Features = () => {
       <div>
         <div>
           <Image
-            src="/assets/illutration-lifestyle.svg"
+            src="/assets/illustration-lifestyle.svg"
             alt="Illustration lifestyle"
             width={100}
             height={100}

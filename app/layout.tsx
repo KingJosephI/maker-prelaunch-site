@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
-import "./globals.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import "./globals.css";
 
 const manrope = Manrope({
   variable: "--font-manrope",
   subsets: ["latin"],
 });
-
 
 export const metadata: Metadata = {
   title: "Maker prelaunch ",
@@ -17,15 +16,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body className={`${manrope.className} antialiased`}>
         <Header />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
