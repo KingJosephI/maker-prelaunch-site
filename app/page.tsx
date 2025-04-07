@@ -2,102 +2,142 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <header>
+        <Image src="/assets/logo.svg" alt="logo" width={100} height={100} />
+      </header>
+      <main>
+        <section>
+          <h1>Get paid for the work you love to do.</h1>
+          <p>
+            The 9-5 grind is so last century. We believe in living life on your
+            own terms. Whether you’re looking to escape the rat race or set up a
+            side hustle, we’ve got you covered.
+          </p>
+        </section>
+        <section>
+          <div>
+            <div>
+              <Image
+                src="/assets/logo.svg"
+                alt="logo"
+                width={100}
+                height={100}
+              />
+            </div>
+            <h2>Indulge your passions</h2>
+            <p>
+              Your passions shouldn't be just for the weekend. Earn a living
+              doing what you love.
+            </p>
+          </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+          <div>
+            <div>
+              <Image
+                src="/assets/logo.svg"
+                alt="logo"
+                width={100}
+                height={100}
+              />
+            </div>
+            <h2>Gain financial freedom</h2>
+            <p>
+              Start making money work for you. There’s nothing quite like
+              earning while you sleep.
+            </p>
+          </div>
+
+          <div>
+            <div>
+              <Image
+                src="/assets/logo.svg"
+                alt="logo"
+                width={100}
+                height={100}
+              />
+            </div>
+            <h2>Choose your lifestyle</h2>
+            <p>
+              Own your daily schedule. Fancy a lie-in? Go for it! Take charge of
+              your week.
+            </p>
+          </div>
+          <div>
+            <div>
+              <Image
+                src="/assets/logo.svg"
+                alt="logo"
+                width={100}
+                height={100}
+              />
+            </div>
+            <h2>Work from anywhere</h2>
+            <p>
+              Selling online means not being pinned down. Want to work AND
+              travel? Go for it!
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Our pricing plans</h2>
+          <p>
+            We only make money when our creators make money. Our plans are
+            always affordable, and it’s completely free to get started.
+          </p>
+          <div>
+            <div>
+              <Image
+                src="/assets/logo.svg"
+                alt="logo"
+                width={100}
+                height={100}
+              />
+              <h3>Dip your toe</h3>
+              <p>
+                Just getting started? No problem at all! Our free plan will take
+                you a long way.
+              </p>
+              <div>Free</div>
+              <ul>
+                <li>Unlimited products</li>
+                <li>Basic analytics</li>
+                <li>Limited marketplace exposure</li>
+                <li>10% fee per transaction</li>
+              </ul>
+            </div>
+            <div>
+              <Image
+                src="/assets/logo.svg"
+                alt="logo"
+                width={100}
+                height={100}
+              />
+              <h3>Dive right in</h3>
+              <p>
+                Ready for the big time? Our paid plan will help you take your
+                business to the next level.
+              </p>
+              <div>$25.00 /month</div>
+              <ul>
+                <li>Custom domain</li>
+                <li>Advanced analytics and reports</li>
+                <li>High marketplace visibility</li>
+                <li>5% fee per transaction</li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      <footer>
+        <h2>Get notified when we launch</h2>
+        <form>
+          <input type="email" placeholder="Email address" />
+          <button>Get notified</button>
+        </form>
       </footer>
-    </div>
+    </>
   );
 }
