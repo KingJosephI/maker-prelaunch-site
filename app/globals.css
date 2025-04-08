@@ -12,7 +12,19 @@
   --font-mono: var(--font-geist-mono); */
 
   /* Custom colors */
-  --color-blue:
+  --color-pricing-blue: #0070f3;
+  --color-feature-blue: #093F68;
+  --color-backcolor: #080C20;
+}
+
+@layer base {
+  h2 {
+    @apply text-[18px] font-extrabold;
+  }
+
+  p {
+    @apply text-[15px] font-medium text-blue-400;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
