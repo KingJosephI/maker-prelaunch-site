@@ -4,7 +4,7 @@ import Features from "./components/Features/Features";
 
 export default function Home() {
   return (
-    <main>
+    <main className="px-[24px] md:px-[97px] lg:px-[165px]">
       <Hero />
       <Features />
       <Pricing />

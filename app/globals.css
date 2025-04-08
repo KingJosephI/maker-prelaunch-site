@@ -8,13 +8,13 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  /* --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono); */
 
   /* Custom colors */
   --color-pricing-blue: #0070f3;
   --color-feature-blue: #093F68;
   --color-backcolor: #080C20;
+  --color-paragraph-color: #777F98;
+  --color-error-color: #FF2965;
 }
 
 @layer base {
@@ -23,8 +23,12 @@
   }
 
   p {
-    @apply text-[15px] font-medium text-blue-400;
+    @apply text-[15px] font-medium text-paragraph-color;
   }
+}
+
+@layer components {
+  
 }
 
 @media (prefers-color-scheme: dark) {
