@@ -4,7 +4,7 @@ import { featuresList } from "./data/featuresList";
 
 const Features = (): ReactNode => {
    return (
-     <section className="flex flex-col gap-14 lg:h-[300px] lg:flex-row lg:[&>*:nth-child(even)]:self-end md:[&>*:nth-child(odd)]:ml-14 lg:[&>*:nth-child(odd)]:ml-0">
+     <section className="features-section">
        {featuresList.map((feature) => (
          <Feature
            key={feature.id}
