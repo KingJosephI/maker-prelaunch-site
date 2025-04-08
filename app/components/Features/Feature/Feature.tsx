@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { FeatureType } from "./types/Feature";
-
+import { FeatureType } from "../types/Feature";
 
 const Feature: React.FC<FeatureType> = ({ title, description, image }) => {
   return (

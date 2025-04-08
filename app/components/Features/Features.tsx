@@ -1,12 +1,13 @@
+import { ReactNode } from "react";
 import Feature from "./Feature/Feature";
-import { featuresList } from "./data/data";
+import { featuresList } from "./data/featuresList";
 
-const Features = () => {
+const Features = (): ReactNode => {
    return (
     <section className="flex flex-col md:flex-row">
       {featuresList.map((feature) => (
         <Feature
-          key={feature.title}
+          key={feature.id}
           title={feature.title}
           description={feature.description}
           image={feature.image}
