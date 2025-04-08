@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
-import Feature from "./Feature/Feature";
 import { featuresList } from "./data/featuresList";
+import Feature from "./components/Feature";
 
-const Features = (): ReactNode => {
+export const Features = (): ReactNode => {
    return (
      <section className="features-section">
        {featuresList.map((feature) => (
@@ -17,4 +17,3 @@ const Features = (): ReactNode => {
    );
 };
 
-export default Features;

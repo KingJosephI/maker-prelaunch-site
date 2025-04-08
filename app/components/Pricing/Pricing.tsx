@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-const Pricing = () => {
+export const Pricing = () => {
   return (
     <section>
       <h2>Our pricing plans</h2>
@@ -55,5 +55,3 @@ const Pricing = () => {
     </section>
   );
 }
-
-export default Pricing

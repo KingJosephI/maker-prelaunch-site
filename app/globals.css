@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #080C20;
+  --foreground: #FFFFFF;
 }
 
 @theme inline {
@@ -30,13 +30,6 @@
 @layer components {
   .features-section {
     @apply flex flex-col gap-14 lg:h-[300px] lg:flex-row lg:[&>*:nth-child(even)]:self-end md:[&>*:nth-child(odd)]:ml-14 lg:[&>*:nth-child(odd)]:ml-0
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #080C20;
-    --foreground: #FFFFFF;
   }
 }
 

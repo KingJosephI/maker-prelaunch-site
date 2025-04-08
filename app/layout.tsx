@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import { Header, Footer } from "./components";
 import "./globals.css";
 
 const manrope = Manrope({
-  variable: "--font-manrope",
   subsets: ["latin"],
 });
 
@@ -19,7 +17,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${manrope.className} antialiased`}>
+      <body className={`${manrope.className} px-6 md:px-24 lg:px-[10.3rem]`}>
         <Header />
         {children}
         <Footer />

@@ -1,13 +1,10 @@
-"use client";
-
 import Image from "next/image";
 
-const Header = () => {
+export const Header = () => {
   return (
-    <header>
+    <header className="max-sm:flex max-sm:justify-center pt-10 pb-16">
       <Image src="/assets/logo.svg" alt="logo" width={100} height={100} />
     </header>
   );
 }
 
-export default Header
