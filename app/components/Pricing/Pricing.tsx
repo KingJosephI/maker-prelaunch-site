@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const Pricing = () => {
   return (
-    <section>
+    <section className="px-6 md:px-24 lg:px-[10.3125rem]">
       <h2>Our pricing plans</h2>
       <p>
         We only make money when our creators make money. Our plans are always

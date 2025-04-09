@@ -28,6 +28,20 @@
 }
 
 @layer components {
+  .hero-section {
+    @apply text-center md:h-[360px] lg:h-[460px];
+
+    @media (min-width: 768px) {
+      background-image: url("/assets/illustration-hero-left.svg"), url("/assets/bg-hero-squiggle.svg") ,url("/assets/illustration-hero-right.svg") ;
+
+      background-position: left -3rem top, center , right -4.5rem top ;
+      background-repeat: no-repeat, no-repeat, no-repeat;
+    }
+  
+    /* background-size: 40%, 100%, 40%; */
+
+  }
+  
   .features-section {
     @apply flex flex-col gap-14 lg:h-[300px] lg:flex-row lg:[&>*:nth-child(even)]:self-end md:[&>*:nth-child(odd)]:ml-14 lg:[&>*:nth-child(odd)]:ml-0
   }
