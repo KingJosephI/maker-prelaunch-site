@@ -19,7 +19,7 @@
 
 @layer base {
   h2 {
-    @apply text-[18px] font-extrabold;
+    @apply text-[1.125rem] font-extrabold;
   }
 
   p {
@@ -38,12 +38,33 @@
       background-repeat: no-repeat, no-repeat, no-repeat;
     }
   
-    /* background-size: 40%, 100%, 40%; */
 
   }
   
   .features-section {
     @apply flex flex-col gap-14 lg:h-[300px] lg:flex-row lg:[&>*:nth-child(even)]:self-end md:[&>*:nth-child(odd)]:ml-14 lg:[&>*:nth-child(odd)]:ml-0
+  }
+
+  .pricing-list-free {
+    list-style-image: url('/assets/icon-check-light.svg');
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .pricing-list-paid {
+    list-style-image: url('/assets/icon-check.svg');
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .pricing-heading {
+    @apply text-[1.125rem] font-extrabold;
+  }
+  
+  .pricing-cost {
+    @apply text-[2.5rem] font-extrabold;
+    margin-bottom: 19px;
   }
 }
 
