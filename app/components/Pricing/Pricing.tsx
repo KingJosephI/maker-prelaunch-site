@@ -4,7 +4,7 @@ export const Pricing = () => {
   return (
     <section className="px-6 md:px-24 lg:px-[10.3125rem]">
       <h2 className="text-2xl md:text-[2rem] text-center">Our pricing plans</h2>
-      <p className="text-center pt-[27px] pb-[56px] lg:w-[50%]">
+      <p className="text-center pt-[27px] pb-[56px] lg:w-[50%] lg:mx-auto">
         We only make money when our creators make money. Our plans are always
         affordable, and it’s completely free to get started.
       </p>

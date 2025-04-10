@@ -30,6 +30,11 @@
     background-image: url('/assets/bg-footer-squiggle.svg');
     background-repeat: no-repeat;
     background-position: top 50% center ;
+
+    @media (max-width: 767px) {
+      background-size: 500px;
+      background-position: top 144px center;
+    }
   }
 }
 
