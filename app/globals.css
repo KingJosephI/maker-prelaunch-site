@@ -25,6 +25,12 @@
   p {
     @apply text-[15px] font-medium text-paragraph-color;
   }
+
+  footer {
+    background-image: url('/assets/bg-footer-squiggle.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
 }
 
 @layer components {
@@ -42,9 +48,14 @@
   }
   
   .features-section {
-    @apply flex flex-col gap-14 lg:h-[300px] lg:flex-row lg:[&>*:nth-child(even)]:self-end md:[&>*:nth-child(odd)]:ml-14 lg:[&>*:nth-child(odd)]:ml-0
+    @apply flex flex-col gap-14 lg:h-[300px] lg:flex-row lg:[&>*:nth-child(even)]:self-end md:[&>*:nth-child(odd)]:ml-14 lg:[&>*:nth-child(odd)]:ml-0;
   }
-
+  .feature-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   .pricing-list-free {
     list-style-image: url('/assets/icon-check-light.svg');
     display: flex;

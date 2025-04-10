@@ -17,7 +17,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${manrope.className}`}>
+      <body className={`${manrope.className} flex flex-col`}>
         <Header />
         {children}
         <Footer />
