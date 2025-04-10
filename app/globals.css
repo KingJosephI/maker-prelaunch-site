@@ -77,6 +77,10 @@
     @apply text-[2.5rem] font-extrabold;
     margin-bottom: 19px;
   }
+
+  .notification-button {
+    @apply cursor-pointer hover:bg-backcolor hover:text-white hover:border-[#3EE9E5] border-2 bg-[#3EE9E5] border-[#3EE9E5] text-[#093F68] font-extrabold rounded-4xl p-4.5 px-6.5 ease-in duration-150;
+  }
 }
 
 body {

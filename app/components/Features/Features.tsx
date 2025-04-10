@@ -4,7 +4,7 @@ import Feature from "./components/Feature";
 
 export const Features = (): ReactNode => {
    return (
-     <section className="features-section px-6 md:px-24 lg:px-[10.3125rem]">
+     <section id="features" className="features-section px-6 md:px-24 lg:px-[10.3125rem]">
        {featuresList.map((feature) => (
          <Feature
            key={feature.id}

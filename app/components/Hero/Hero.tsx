@@ -1,4 +1,13 @@
+"use client";
+
 import Image from "next/image";
+
+const scrollToTarget = (targetId: string) => {
+  const targetElement = document.getElementById(targetId);
+  if (targetElement) {
+    targetElement.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
 export const Hero = () => {
   return (
@@ -20,13 +29,14 @@ export const Hero = () => {
           own terms. Whether you’re looking to escape the rat race or set up a
           side hustle, we’ve got you covered.
         </p>
-      
-      <Image
-        src="/assets/icon-scroll.svg"
-        alt="Scroll icon"
-        width={26}
-        height={42}
-        className="mx-auto"
+
+        <Image
+          src="/assets/icon-scroll.svg"
+          alt="Scroll icon"
+          width={26}
+          height={42}
+          className="mx-auto animate-bounce hover:cursor-pointer"
+          onClick={() => scrollToTarget("features")}
         />
       </div>
     </section>
