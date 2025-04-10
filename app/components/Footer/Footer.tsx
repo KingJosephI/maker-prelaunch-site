@@ -10,7 +10,8 @@ export const Footer = () => {
   const { register, handleSubmit, formState: { errors } } = useForm<FormFields>()
   
   const onSubmit: SubmitHandler<FormFields> = ({ email }) => {
-    alert(`Your email ${email} is saved in our database`);
+
+   alert(`Your email ${email} is saved in our database`);
   }
 
   return (
@@ -25,7 +26,7 @@ export const Footer = () => {
         <input
           type="email"
           placeholder="Email address"
-          className="bg-feature-blue w-80 rounded-4xl p-4.5 px-6.5"
+          className={`${errors.email && 'border-red-500 border-2'} bg-feature-blue w-80 rounded-4xl p-4.5 px-6.5`}
           {...register("email", {
             required: "Email is required",
             pattern: {

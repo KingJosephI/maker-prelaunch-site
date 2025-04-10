@@ -40,8 +40,14 @@
     @media (min-width: 768px) {
       background-image: url("/assets/illustration-hero-left.svg"), url("/assets/bg-hero-squiggle.svg") ,url("/assets/illustration-hero-right.svg") ;
 
-      background-position: left -3rem top, center , right -4.5rem top ;
+      background-position: left -14rem top, center , right -14rem top ;
       background-repeat: no-repeat, no-repeat, no-repeat;
+      background-size: auto, 55%, auto;
+    }
+    
+    @media (min-width: 1024px) {
+      background-position: left -3rem top, top center , right -4.5rem top ;
+      background-size: auto, auto, auto;
     }
   
 
